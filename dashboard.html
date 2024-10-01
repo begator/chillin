@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>لوحة التحكم - إدارة القائمة</h1>
+    </header>
+
+    <section>
+        <h2>إضافة طبق جديد</h2>
+        <form method="POST" action="add_item.php">
+            <label for="name">اسم الطبق:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="description">الوصف:</label>
+            <textarea id="description" name="description" required></textarea><br>
+
+            <label for="price">السعر:</label>
+            <input type="number" id="price" name="price" required><br>
+
+            <input type="submit" value="إضافة">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 مطعمك</p>
+    </footer>
+</body>
+</html>
